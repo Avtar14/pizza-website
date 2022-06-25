@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/pizza-website/static/css/main.abd64e84.css",
+    "main.js": "/pizza-website/static/js/main.dc41b14d.js",
+    "static/js/787.71e672d5.chunk.js": "/pizza-website/static/js/787.71e672d5.chunk.js",
+    "static/media/pizza.jpeg": "/pizza-website/static/media/pizza.21a1098fa87e28d80f37.jpeg",
+    "static/media/download.png": "/pizza-website/static/media/download.fcdc67e6b331cba63735.png",
+    "static/media/5.jpg": "/pizza-website/static/media/5.91e74f78cf1796cc21d4.jpg",
+    "static/media/4.jpg": "/pizza-website/static/media/4.fa48e68be231ddb208ba.jpg",
+    "static/media/1.jpg": "/pizza-website/static/media/1.501953313a542f68dc8e.jpg",
+    "static/media/2.jpg": "/pizza-website/static/media/2.45d49c200d91e6fcfa24.jpg",
+    "static/media/3.jpg": "/pizza-website/static/media/3.331edc9b3e0f034cafba.jpg",
+    "index.html": "/pizza-website/index.html",
+    "main.abd64e84.css.map": "/pizza-website/static/css/main.abd64e84.css.map",
+    "main.dc41b14d.js.map": "/pizza-website/static/js/main.dc41b14d.js.map",
+    "787.71e672d5.chunk.js.map": "/pizza-website/static/js/787.71e672d5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.abd64e84.css",
+    "static/js/main.dc41b14d.js"
+  ]
+}
