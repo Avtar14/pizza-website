@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import './App.css';
 import Navbar  from "./MyComponent/Navbar";
 import Home from "./MyComponent/Home"
@@ -14,25 +14,35 @@ import {
  
 } from "react-router-dom";
 
-
 function App() {
+  const [mode, setmode] = useState('light')
+
+const ontoggle=()=>{
+  if(mode=='light'){
+    setmode('dark')
+  }
+  else{
+    setmode('light')
+  }
+}
+
   return (
     <>
     <div className="App">
     
     <Router>
-    <Navbar/>
+    <Navbar ontoggle={ontoggle}  />
     
     
     
       <Routes>
         <Route exact path="/home" element={<Home/>}/>
-        <Route exact path="/menu" element={<Menu/>}/>
+        <Route exact path="/menu" element={<Menu mode={mode} />}/>
         <Route exact path="/pizza-website" element={<Home/>}/>
 
-        <Route exact path="/aboutus" element={<About/>}/>
+        <Route exact path="/aboutus" element={<About mode={mode}/>}/>
 
-        <Route exact path="/contact" element={<Contact/>}/>
+        <Route exact path="/contact" element={<Contact mode={mode}/>}/>
 
         
 

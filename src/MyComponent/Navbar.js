@@ -3,7 +3,7 @@ import logo from "../assets/download.png"
 import { Link } from "react-router-dom";
 
 
-export default function Navbar() {
+export default function Navbar(props) {
   return (
     <nav className="navbar navbar-expand-lg bg-dark ">
         <img src={logo} alt="error" style={{width:'114px', paddingLeft:'42px'}}/>
@@ -30,7 +30,11 @@ export default function Navbar() {
             
             </ul>
             
-        </div>    
+        </div>  
+        <div className="form-check form-switch" style={{float:'right',color:'white'}}>
+            <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" onClick={props.ontoggle}/>
+            <label className="form-check-label" htmlFor="flexSwitchCheckDefault">Enable Dark mode</label>
+        </div>  
     </nav>
   );
 }

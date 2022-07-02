@@ -1,14 +1,15 @@
 import React from 'react'
 import Photo from '../assets/5.jpg'
 
-export default function Contact() {
+export default function Contact(props) {
   return (
-    <div className='container-sm' style={{height:'500px',backgroundSize:'cover',margin:'0px',paddingLeft:'0px'}}>
-      
-     
-      <div className="container" style={{width: '804px',height: '497px',float:'right'}}><h1 style={{color:'#503608',WebkitTextStroke:'2px red'}}>Contact Us</h1>
-        <div className="mb-3" >
-          <label htmlFor="formGroupExampleInput" className="form-label" style={{paddingRight:'701px'}}>Full Name</label>
+    <div className="contactcontainer" style={{display:'flex',flexDirection:'row',height:'500px',backgroundColor:props.mode=='dark'?'black':'white',color:props.mode=='dark'?'white':'black'}}>
+      <div className="forimage" >
+        <img src={Photo} alt="error" style={{height:'500px',width:'500px'}}/>
+      </div>
+      <div className="contactform" style={{paddingLeft:'116px',paddingTop:'30px'}}>
+      <div className="mb-3">
+          <label htmlFor="formGroupExampleInput" className="form-label" style={{paddingRight:'701px',}}>Full Name</label>
           <input type="text" className="form-control" id="formGroupExampleInput" placeholder="Enter Full Name"/>
         </div>
         <div className="mb-3">
@@ -21,10 +22,7 @@ export default function Contact() {
         </div>
         <button style={{backgroundColor:'#503608',color:'white',borderRadius:'5px'}}>Submit</button>
       </div>
-        <div className="image" style={{backgroundImage:`url(${Photo})`,width:'500px',height:'498px',backgroundSize:'cover'}}></div>
-        
 
-      
     </div>
   )
 }

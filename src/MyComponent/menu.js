@@ -3,9 +3,9 @@ import {MenuList} from './menulist'
 import Neapolitan from "../assets/1.jpg";
 import Chicago from "../assets/2.jpg";
 import NewYork from "../assets/3.jpg";
-export default function menu() {
+export default function menu(props) {
   return (
-    <div className="menu" style={{height:'70vh'}}>
+    <div className="menu" style={{height:'70vh',backgroundColor:props.mode=='dark'?'black':'white'}}>
           <h1 style={{textAlign:'center',color:'#503608',WebkitTextStroke:'1px red'}}>Our Menu</h1>
           {/* <div className="menuList"> */}
             {/* {MenuList.map((menuItem,key)=>{
@@ -30,7 +30,7 @@ export default function menu() {
         })} </div> */}
         <div className="row row-cols-1 row-cols-md-3 g-4" >
          
-            <div className="card" style={{width:'233px',marginLeft:'357px',marginBottom:'50px'}}>
+            <div className="card" style={{width:'233px',marginLeft:'357px',marginBottom:'50px',backgroundColor:props.mode=='dark'?'black':'white',color:props.mode=='dark'?'white':'black',border:props.mode=='dark'?'2px solid white':'2px solid black'}}>
               <img src={Neapolitan} className="card-img-top" />
               <div className="card-body"    >
                 <h5 className="card-title">Neapolitan Pizza</h5>
@@ -39,7 +39,7 @@ export default function menu() {
               </div>
             </div>
           
-            <div className="card" style={{width:'233px',marginLeft:'73px',marginBottom:'20px'}}>
+            <div className="card" style={{width:'233px',marginLeft:'73px',marginBottom:'20px',backgroundColor:props.mode=='dark'?'black':'white',color:props.mode=='dark'?'white':'black',border:props.mode=='dark'?'2px solid white':'2px solid black'}}>
               <img src={Chicago} className="card-img-top" />
               <div className="card-body"    >
                 <h5 className="card-title">Chicago Pizza</h5>
@@ -47,7 +47,7 @@ export default function menu() {
                 <p className="card-text">$20.00</p>
               </div>
             </div>
-            <div className="card" style={{width:'233px',marginLeft:'73px',marginBottom:'55px'}}>
+            <div className="card" style={{width:'233px',marginLeft:'73px',marginBottom:'55px',backgroundColor:props.mode=='dark'?'black':'white',color:props.mode=='dark'?'white':'black',border:props.mode=='dark'?'2px solid white':'2px solid black'}}>
               <img src={NewYork} className="card-img-top" style={{height:'205px'}}/>
               <div className="card-body" style={{marginButtom:'5px'}}   >
                 <h5 className="card-title">New York-Style Pizza</h5>
